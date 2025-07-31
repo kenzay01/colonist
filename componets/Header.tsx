@@ -7,8 +7,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { id: "main", label: "Головна" },
-    { id: "conditions", label: "Умови" },
+    // { id: "main", label: "Головна" },
+    { id: "aboutUs", label: "Про нас" },
     { id: "details", label: "Деталі" },
     { id: "contacts", label: "Контакти" },
     { id: "request", label: "Заповнити заявку", isButton: true },
@@ -25,7 +25,7 @@ const Header = () => {
     const header = document.querySelector("header");
     if (element && header) {
       const isMobile = window.innerWidth < 768;
-      const headerHeight = isMobile ? 64 : header.offsetHeight;
+      const headerHeight = isMobile ? 48 : 0;
       const elementTop = element.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: elementTop - headerHeight,
@@ -36,24 +36,24 @@ const Header = () => {
   };
 
   return (
-    <header className="relative top-0 left-0 right-0 z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white rounded-b-4xl border-3 border-t-0 border-[var(--main-color)]">
-        <div className="flex justify-between items-center h-16 ">
+    <header className="md:relative fixed top-0 left-0 right-0 z-50 bg-transparent">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 bg-white rounded-b-2xl border-1 border-t-0 border-[var(--main-color)]">
+        <div className="flex justify-between items-center h-12 sm:h-16">
           {/* Left side - Social icons */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-1 sm:space-x-3">
             {socialLinks.map((social) => (
               <a
                 key={social.id}
                 href={social.href}
-                className="w-10 h-10 bg-[var(--main-color)] rounded-full flex items-center justify-center hover:scale-105 transition-all duration-300"
+                className="w-7 h-7 sm:w-10 sm:h-10 bg-[var(--main-color)] rounded-full flex items-center justify-center hover:scale-105 transition-all duration-300"
               >
-                <social.icon className="w-5 h-5 text-white" />
+                <social.icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
               </a>
             ))}
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-4">
+          <nav className="hidden sm:flex items-center space-x-4">
             <div className="flex items-center justify-center space-x-4">
               {navLinks
                 .filter((link) => !link.isButton)
@@ -87,23 +87,27 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg text-white hover:text-green-400 hover:bg-white/10 transition-colors"
+            className="sm:hidden p-2 sm:p-3 rounded-lg text-[var(--main-color)] hover:bg-white/10 transition-colors active:bg-[var(--main-color)]/20"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? (
+              <X size={18} className="sm:size-6" />
+            ) : (
+              <Menu size={18} className="sm:size-6" />
+            )}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/20 bg-gradient-to-b from-gray-800 to-gray-800/95 backdrop-blur-sm">
-            <nav className="flex flex-col space-y-3">
+          <div className="sm:hidden py-3 border-t border-[var(--main-color)]/20 backdrop-blur-sm">
+            <nav className="flex flex-col space-y-1 px-3 sm:px-4">
               {navLinks.map((link) =>
                 !link.isButton ? (
                   <button
                     key={link.id}
                     onClick={() => scrollToSection(link.id)}
-                    className="text-left text-white/90 hover:text-green-400 hover:bg-white/10 transition-all duration-200 py-2 px-4 rounded-lg"
+                    className="text-left text-white bg-[var(--main-color)] transition-all duration-200 py-2 px-4 rounded-lg text-sm sm:text-base"
                   >
                     {link.label}
                   </button>
@@ -111,7 +115,7 @@ const Header = () => {
                   <button
                     key={link.id}
                     onClick={() => scrollToSection(link.id)}
-                    className="bg-gradient-to-r from-green-400 to-green-500 text-gray-900 px-6 py-3 rounded-lg hover:from-green-500 hover:to-green-600 transition-all duration-200 font-bold text-center mt-2 shadow-lg"
+                    className="bg-[var(--main-color)] text-white px-6 py-2 rounded-lg transition-all duration-200 font-bold text-center mt-2 shadow-lg text-sm sm:text-base"
                   >
                     {link.label}
                   </button>

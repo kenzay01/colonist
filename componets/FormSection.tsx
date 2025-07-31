@@ -117,15 +117,9 @@ Telegram: ${data.telegram}
         setFormData({ name: "", phone: "", telegram: "", message: "" });
         setPhoneError("");
         setTimeout(() => setSubmitStatus(""), 3000);
-      } else if (telegramSuccess) {
-        setSubmitStatus("Частково успішно: дані збережено, але є помилки");
-        console.error("Telegram result:", telegramResult);
-        // console.error("Sheets result:", sheetsResult);
       } else {
         setSubmitStatus("Помилка при відправці та збереженні даних");
-        console.error("Both operations failed:", {
-          telegramResult,
-        });
+        console.error("Both operations failed:", { telegramResult });
       }
     } catch (error) {
       console.error("Error during submission:", error);
@@ -134,14 +128,17 @@ Telegram: ${data.telegram}
   };
 
   return (
-    <div className=" bg-white text-[var(--main-color)] flex items-center justify-center p-4 py-12 relative overflow-hidden">
+    <div
+      id="request"
+      className="bg-white text-[var(--main-color)] flex items-center justify-center p-4 sm:p-6 py-12 md:pt-10 md:pb-16 relative overflow-hidden"
+    >
       <div className="relative z-10 w-full max-w-2xl">
         {/* Main heading */}
-        <div className="text-center mb-12">
-          <h1 className="text-6xl md:text-8xl custom-text mb-4 text-[var(--main-color)]">
+        <div className="text-center mb-8 sm:mb-12 py-6 sm:py-8 transition-all duration-300">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl custom-text mb-4 text-[var(--main-color)]">
             ПРИЄДНУЙСЯ!
           </h1>
-          <p className="text-xl md:text-2xl text-[var(--main-color)] font-light">
+          <p className="text-lg sm:text-xl md:text-2xl text-[var(--main-color)] font-light">
             Залиш заявку і ми з тобою зв'яжемось
           </p>
         </div>
@@ -149,14 +146,14 @@ Telegram: ${data.telegram}
         {/* Form */}
         <div className="space-y-6">
           {/* Top row - Name, Telegram, Phone */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-4 bg-white border-2 border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-[var(--main-color)] focus:outline-none transition-colors text-lg shadow-sm"
+                className="w-full p-3 sm:p-4 bg-white border-2 border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-[var(--main-color)] focus:outline-none transition-all duration-300 text-base sm:text-lg shadow-sm hover:shadow-md hover:-translate-y-1"
                 placeholder="Ім'я"
                 required
               />
@@ -168,7 +165,7 @@ Telegram: ${data.telegram}
                 value={formData.telegram}
                 onChange={handleChange}
                 onFocus={handleTelegramFocus}
-                className="w-full p-4 bg-white border-2 border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-[var(--main-color)] focus:outline-none transition-colors text-lg shadow-sm"
+                className="w-full p-3 sm:p-4 bg-white border-2 border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-[var(--main-color)] focus:outline-none transition-all duration-300 text-base sm:text-lg shadow-sm hover:shadow-md hover:-translate-y-1"
                 placeholder="@Телеграм"
                 required
               />
@@ -180,7 +177,7 @@ Telegram: ${data.telegram}
                 value={formData.phone}
                 onChange={handleChange}
                 onFocus={handlePhoneFocus}
-                className={`w-full p-4 bg-white border-2 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-lg shadow-sm ${
+                className={`w-full p-3 sm:p-4 bg-white border-2 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none transition-all duration-300 text-base sm:text-lg shadow-sm hover:shadow-md hover:-translate-y-1 ${
                   phoneError
                     ? "border-red-500"
                     : "border-gray-300 focus:border-[var(--main-color)]"
@@ -201,7 +198,7 @@ Telegram: ${data.telegram}
               value={formData.message}
               onChange={handleChange}
               rows={4}
-              className="w-full p-4 bg-white border-2 border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-[var(--main-color)] focus:outline-none transition-colors text-lg resize-none shadow-sm"
+              className="w-full p-3 sm:p-4 bg-white border-2 border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:border-[var(--main-color)] focus:outline-none transition-all duration-300 text-base sm:text-lg resize-none shadow-sm hover:shadow-md hover:-translate-y-1"
               placeholder="Повідомлення (необов'язково)"
             />
           </div>
@@ -213,7 +210,7 @@ Telegram: ${data.telegram}
               type="button"
               onClick={handleSubmit}
               disabled={submitStatus === "Відправка..."}
-              className="bg-[var(--main-color)] text-white font-bold py-4 px-12 rounded-lg text-xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
+              className="bg-[var(--main-color)] text-white font-bold py-3 sm:py-4 px-8 sm:px-12 rounded-lg text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[var(--main-color)] disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {submitStatus === "Відправка..." ? "Відправка..." : "Відправити"}
             </button>
@@ -222,7 +219,7 @@ Telegram: ${data.telegram}
             {submitStatus && submitStatus !== "Успішно!" && (
               <p
                 className={`text-sm text-center ${
-                  submitStatus.includes("Успішно")
+                  submitStatus.includes("успішно")
                     ? "text-green-500"
                     : "text-red-500"
                 }`}
@@ -235,12 +232,12 @@ Telegram: ${data.telegram}
       </div>
 
       {/* Wave decoration at bottom */}
-      <div className="absolute -bottom-9 left-0 right-0 z-0">
+      <div className="absolute bottom-0 md:-bottom-8 left-0 right-0 z-0">
         <svg
           viewBox="0 0 1200 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-16 md:h-24"
+          className="w-full h-12 sm:h-16 md:h-24"
           preserveAspectRatio="none"
         >
           <path
