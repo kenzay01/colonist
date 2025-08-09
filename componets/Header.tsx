@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa6";
+import { FaInstagram, FaTelegram, FaViber } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
   const socialLinks = [
     { id: "instagram", href: "#", icon: FaInstagram },
     { id: "telegram", href: "#", icon: FaTelegram },
-    { id: "whatsapp", href: "#", icon: FaWhatsapp },
+    { id: "viber", href: "#", icon: FaViber },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <header className="md:relative fixed top-0 left-0 right-0 z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 bg-white rounded-b-2xl border-1 border-t-0 border-[var(--main-color)]">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 bg-[var(--main-color)] rounded-b-2xl border-1 border-t-0 border-white">
         <div className="flex justify-between items-center h-12 sm:h-16">
           {/* Left side - Social icons */}
           <div className="flex items-center space-x-1 sm:space-x-3">
@@ -45,9 +45,9 @@ const Header = () => {
               <a
                 key={social.id}
                 href={social.href}
-                className="w-7 h-7 sm:w-10 sm:h-10 bg-[var(--main-color)] rounded-full flex items-center justify-center hover:scale-105 transition-all duration-300"
+                className="w-7 h-7 sm:w-10 sm:h-10 bg-white rounded-full flex items-center justify-center hover:scale-105 transition-all duration-300"
               >
-                <social.icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                <social.icon className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--main-color)]" />
               </a>
             ))}
           </div>
@@ -61,10 +61,10 @@ const Header = () => {
                   <button
                     key={link.id}
                     onClick={() => scrollToSection(link.id)}
-                    className="relative px-2 py-1 flex items-center justify-center text-[15px] overflow-hidden group rounded-full cursor-pointer border-2 border-[var(--main-color)]"
+                    className="relative px-2 py-1 flex items-center justify-center text-[15px] overflow-hidden group rounded-full cursor-pointer border-2 border-white"
                   >
-                    <span className="absolute inset-0 bg-[var(--main-color)] translate-y-[105%] group-hover:translate-y-0 transition-transform duration-300"></span>
-                    <span className="relative z-10 text-[var(--main-color)] group-hover:text-white transition-colors duration-300 pt-1">
+                    <span className="absolute inset-0 bg-white translate-y-[105%] group-hover:translate-y-0 transition-transform duration-300"></span>
+                    <span className="relative z-10 text-white group-hover:text-[var(--main-color)] transition-colors duration-300 pt-1">
                       {link.label}
                     </span>
                   </button>
@@ -77,7 +77,7 @@ const Header = () => {
                   <button
                     key={link.id}
                     onClick={() => scrollToSection(link.id)}
-                    className="bg-[var(--main-color)] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 ml-4"
+                    className="bg-white text-[var(--main-color)] font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 ml-4"
                   >
                     {link.label}
                   </button>
@@ -87,7 +87,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="sm:hidden p-2 sm:p-3 rounded-lg text-[var(--main-color)] hover:bg-white/10 transition-colors active:bg-[var(--main-color)]/20"
+            className="sm:hidden p-2 sm:p-3 rounded-lg text-white hover:bg-[var(--main-color)]/10 transition-colors active:bg-white/20"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -100,14 +100,14 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="sm:hidden py-3 border-t border-[var(--main-color)]/20 backdrop-blur-sm">
+          <div className="sm:hidden py-3 border-t border-white/20 backdrop-blur-sm">
             <nav className="flex flex-col space-y-1 px-3 sm:px-4">
               {navLinks.map((link) =>
                 !link.isButton ? (
                   <button
                     key={link.id}
                     onClick={() => scrollToSection(link.id)}
-                    className="text-left text-white bg-[var(--main-color)] transition-all duration-200 py-2 px-4 rounded-lg text-sm sm:text-base"
+                    className="text-left text-[var(--main-color)] bg-white transition-all duration-200 py-2 px-4 rounded-lg text-sm sm:text-base"
                   >
                     {link.label}
                   </button>
@@ -115,7 +115,7 @@ const Header = () => {
                   <button
                     key={link.id}
                     onClick={() => scrollToSection(link.id)}
-                    className="bg-[var(--main-color)] text-white px-6 py-2 rounded-lg transition-all duration-200 font-bold text-center mt-2 shadow-lg text-sm sm:text-base"
+                    className="bg-white text-[var(--main-color)] px-6 py-2 rounded-lg transition-all duration-200 font-bold text-center mt-2 shadow-lg text-sm sm:text-base"
                   >
                     {link.label}
                   </button>

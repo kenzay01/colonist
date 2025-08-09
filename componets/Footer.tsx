@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa6";
+import { FaInstagram, FaTelegram, FaViber } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -51,7 +51,7 @@ const Footer = () => {
                 href="#"
                 className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
               >
-                <FaWhatsapp className="w-4 h-4 text-white" />
+                <FaViber className="w-4 h-4 text-white" />
               </a>
             </div>
           </div>
