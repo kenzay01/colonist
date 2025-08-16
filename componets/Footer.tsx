@@ -12,7 +12,7 @@ const Footer = () => {
         }
       `}</style>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 mb-8 text-center sm:text-left">
           {/* About Us */}
           <div>
             <h3 className="text-lg sm:text-xl font-bold mb-4">Про нас</h3>
@@ -34,7 +34,7 @@ const Footer = () => {
             <h3 className="text-lg sm:text-xl font-bold mb-4">
               Стежте за нами
             </h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 items-center justify-center sm:justify-start">
               <a
                 href="#"
                 className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
