@@ -36,7 +36,7 @@ const JobPosting = () => {
   return (
     <div
       id="details"
-      className="bg-white text-[var(--main-color)] min-h-screen p-4 sm:p-6 py-12 sm:py-16 relative overflow-hidden"
+      className="bg-white text-[var(--main-color)] min-h-screen p-4 sm:p-6 py-12 sm:py-16 relative"
     >
       <div className="relative z-10 w-full">
         {/* Main heading */}
@@ -79,16 +79,13 @@ const JobPosting = () => {
 
           {/* New Conditions Block */}
           <div className="mt-6">
-            <div className="flex-1 flex  items-center gap-4 p-4 bg-white shadow-sm border border-gray-200 rounded-lg text-[var(--main-color)] transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+            <div className="flex-1 flex items-center gap-4 p-4 bg-white shadow-sm border border-gray-200 rounded-lg text-[var(--main-color)] transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <FaCalendarAlt className="w-10 h-10" />
               <div className="w-full">
                 <div>
                   <p className="font-extrabold text-2xl uppercase">
                     Додаткові Умови:
                   </p>
-                  {/* <p className="text-lg font-bold">
-                    (Бонуси які забираєш день в день, не дожидаючись зп)
-                  </p> */}
                 </div>
                 <div className="mt-2 md:mt-4 flex flex-col md:flex-row gap-1 w-full justify-around items-start md:items-center">
                   <p className="text-sm md:text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
@@ -219,49 +216,16 @@ const JobPosting = () => {
               <p>Допомога та підтримка від коуча 24/7</p>
             </div>
           </div>
-
-          {/* <div className="bg-white shadow-md border border-gray-200 rounded-xl rounded-tl-[40px] rounded-br-[40px] p-6 mt-8 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-            <h4 className="text-lg sm:text-xl font-bold text-[var(--main-color)] mb-4 flex items-center justify-center gap-2">
-              <FaHandshake className="w-5 h-5 sm:w-6 sm:h-6" />
-              Наш підхід до співпраці:
-            </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[var(--main-color)] text-sm">
-              <div className="space-y-2">
-                <p className="flex items-center gap-2">
-                  <FaStar className="w-4 h-4" />
-                  Індивідуальний підхід до кар'єрної стратегії
-                </p>
-                <p className="flex items-center gap-2">
-                  <FaStar className="w-4 h-4" />
-                  Актуальні вакансії від прямих роботодавців
-                </p>
-                <p className="flex items-center gap-2">
-                  <FaStar className="w-4 h-4" />
-                  Повна конфіденціальність пошуку. Підтримка на всіх етапах
-                </p>
-              </div>
-              <div className="space-y-2">
-                <p className="flex items-center gap-2">
-                  <FaStar className="w-4 h-4" />
-                  Швидкий та чесний зворотний зв'язок
-                </p>
-                <p className="flex items-center gap-2">
-                  <FaStar className="w-4 h-4" />
-                  Компанії, що цінують людей і допомагають рости
-                </p>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
 
       {/* Decorative wave */}
-      <div className="absolute bottom-0 md:-bottom-9 left-0 right-0 z-0">
+      <div className="absolute bottom-0 left-0 right-0 z-1">
         <svg
           viewBox="0 0 1200 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-12 sm:h-16 md:h-24"
+          className="w-full h-12 sm:h-16"
           preserveAspectRatio="none"
         >
           <path

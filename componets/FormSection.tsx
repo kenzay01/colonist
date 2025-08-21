@@ -232,12 +232,12 @@ Telegram: ${data.telegram}
       </div>
 
       {/* Wave decoration at bottom */}
-      <div className="absolute bottom-0 md:-bottom-8 left-0 right-0 z-0">
+      <div className="absolute bottom-0 md:-bottom-0 left-0 right-0 z-1">
         <svg
           viewBox="0 0 1200 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-12 sm:h-16 md:h-24"
+          className="w-full h-12 sm:h-16"
           preserveAspectRatio="none"
         >
           <path

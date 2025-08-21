@@ -5,11 +5,11 @@ const AboutUs = () => {
   return (
     <div
       id="aboutUs"
-      className="bg-[var(--main-color)] text-white flex items-center justify-center p-4 sm:p-6 py-12 sm:py-16 pb-20 sm:pb-24 relative overflow-hidden"
+      className="bg-[var(--main-color)] text-white flex items-center justify-center p-4 sm:p-6 py-12 sm:py-16 pb-32 relative"
     >
       <div className="relative z-10 w-full max-w-6xl">
         {/* Main heading */}
-        <div className="text-center mb-8 sm:mb-12  py-6 sm:py-8 transition-all duration-300">
+        <div className="text-center mb-8 sm:mb-12 py-6 sm:py-8 transition-all duration-300">
           <h1 className="text-4xl sm:text-6xl md:text-8xl custom-text mb-6 text-white">
             ПРО НАС
           </h1>
@@ -79,18 +79,18 @@ const AboutUs = () => {
                 Що ми робимо:
               </h3>
 
-              <div className="space-y-3 flex flex-col items-start">
-                <p className="text-base sm:text-lg text-[var(--main-color)] leading-relaxed">
+              <div className="space-y-3 flex flex-col items-start justify-start text-left">
+                <p className="text-base sm:text-lg text-[var(--main-color)] text-left">
                   • Відбираємо найкращих кандидатів для унікальної вакансії, що
                   максимально підходить їхньому досвіду та цілям.
                 </p>
 
-                <p className="text-base sm:text-lg text-[var(--main-color)] leading-relaxed">
+                <p className="text-base sm:text-lg text-[var(--main-color)] text-left">
                   • Пропонуємо єдину вакансію, яка закриває широкий спектр
                   професійних та особистих потреб.
                 </p>
 
-                <p className="text-base sm:text-lg text-[var(--main-color)] leading-relaxed">
+                <p className="text-base sm:text-lg text-[var(--main-color)] text-left">
                   • Підтримуємо на кожному етапі — від знайомства з вакансією до
                   успішного працевлаштування.
                 </p>
@@ -108,12 +108,12 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 md:-bottom-9 left-0 right-0 z-0">
+      <div className="absolute bottom-0 md:-bottom-0 left-0 right-0 z-1">
         <svg
           viewBox="0 0 1200 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-12 sm:h-16 md:h-24"
+          className="w-full h-12 sm:h-16"
           preserveAspectRatio="none"
         >
           <path
