@@ -71,8 +71,8 @@ const JobPosting = () => {
               <FaPercentage className="w-10 h-10" />
               <div>
                 <p className="font-extrabold text-2xl uppercase">Відсоток:</p>
-                <p>Від першого депозиту: 5–9%</p>
-                <p>За доливи: 1–2%</p>
+                <p className="font-extrabold">Від першого депозиту: 5–9%</p>
+                <p className="font-extrabold">За доливи: 1–2%</p>
               </div>
             </div>
           </div>
@@ -93,10 +93,10 @@ const JobPosting = () => {
                     25$–1000$
                   </p>
                   <p className="text-sm md:text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
-                    Графік: 5/2, с 10-18
+                    Графік: 5/2, з 10 до 18
                   </p>
                   <p className="text-sm md:text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
-                    Зарплата дважды в месяц
+                    Зарплата двічі на місяць
                   </p>
                 </div>
               </div>
@@ -122,12 +122,12 @@ const JobPosting = () => {
           {isDetailsOpen && (
             <div className="mt-6 p-4 bg-white shadow-md border border-gray-200 rounded-xl text-[var(--main-color)] transition-all duration-300">
               <p className="text-center text-sm sm:text-base mb-4">
-                За подробними умовами звертайтесь за телефоном{" "}
+                За детальними умовами звертайтесь за телефоном{" "}
                 <a
                   href="tel:+380661851900"
                   className="font-bold hover:underline"
                 >
-                  +380 661 851 900
+                  +38 066 185 19 00
                 </a>{" "}
                 <br /> або в месенджери за посиланнями нижче.
               </p>
@@ -163,37 +163,37 @@ const JobPosting = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8">
             <div className="flex items-center gap-3 p-4 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <FaUsers className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--main-color)]" />
-              <span className="text-[var(--main-color)] text-sm sm:text-base">
+              <span className="font-extrabold text-[var(--main-color)] text-sm sm:text-base">
                 Відмінний колектив
               </span>
             </div>
             <div className="flex items-center gap-3 p-4 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <FaArrowTrendUp className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--main-color)]" />
-              <span className="text-[var(--main-color)] text-sm sm:text-base">
-                Кар'єрна драбина
+              <span className="font-extrabold text-[var(--main-color)] text-sm sm:text-base">
+                Кар'єрні сходи
               </span>
             </div>
             <div className="flex items-center gap-3 p-4 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <FaGift className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--main-color)]" />
-              <span className="text-[var(--main-color)] text-sm sm:text-base">
+              <span className="font-extrabold text-[var(--main-color)] text-sm sm:text-base">
                 Розіграші техніки
               </span>
             </div>
             <div className="flex items-center gap-3 p-4 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <FaCoffee className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--main-color)]" />
-              <span className="text-[var(--main-color)] text-sm sm:text-base">
+              <span className="font-extrabold text-[var(--main-color)] text-sm sm:text-base">
                 Зона відпочинку
               </span>
             </div>
             <div className="flex items-center gap-3 p-4 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <FaCar className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--main-color)]" />
-              <span className="text-[var(--main-color)] text-sm sm:text-base">
+              <span className="font-extrabold text-[var(--main-color)] text-sm sm:text-base">
                 Є паркінг
               </span>
             </div>
             <div className="flex items-center gap-3 p-4 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <FaGamepad className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--main-color)]" />
-              <span className="text-[var(--main-color)] text-sm sm:text-base">
+              <span className="font-extrabold text-[var(--main-color)] text-sm sm:text-base">
                 Настільний футбол
               </span>
             </div>

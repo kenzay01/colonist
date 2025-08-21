@@ -46,7 +46,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 bg-[var(--main-color)] rounded-b-2xl border-1 border-t-0 border-white">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 bg-[var(--main-color)] rounded-b-2xl border-3 border-t-0 border-white">
         <div className="flex justify-between items-center h-12 sm:h-16">
           {/* Left side - Social icons */}
           <div className="flex items-center space-x-1 sm:space-x-3">
@@ -70,10 +70,10 @@ const Header = () => {
                   <button
                     key={link.id}
                     onClick={() => scrollToSection(link.id)}
-                    className="relative px-2 py-1 flex items-center justify-center text-[15px] overflow-hidden group rounded-full cursor-pointer border-2 border-white"
+                    className="relative px-2 py-1 flex items-center justify-center text-[15px] overflow-hidden group rounded-full cursor-pointer border-3 border-white"
                   >
                     <span className="absolute inset-0 bg-white translate-y-[105%] group-hover:translate-y-0 transition-transform duration-300"></span>
-                    <span className="relative z-10 text-white group-hover:text-[var(--main-color)] transition-colors duration-300 pt-1">
+                    <span className="font-extrabold relative z-10 text-white group-hover:text-[var(--main-color)] transition-colors duration-300 pt-1">
                       {link.label}
                     </span>
                   </button>

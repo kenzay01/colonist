@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLongArrowAltDown } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -37,7 +38,7 @@ const AboutUs = () => {
             </p>
 
             <div className="flex items-center justify-center my-2">
-              <div className="mx-4 text-3xl sm:text-4xl font-bold text-[var(--main-color)]">
+              <div className="mx-4 text-3xl sm:text-4xl font-bold text-[var(--main-color)] scale-x-300">
                 ⬇
               </div>
             </div>
@@ -78,7 +79,7 @@ const AboutUs = () => {
                 Що ми робимо:
               </h3>
 
-              <div className="space-y-3">
+              <div className="space-y-3 flex flex-col items-start">
                 <p className="text-base sm:text-lg text-[var(--main-color)] leading-relaxed">
                   • Відбираємо найкращих кандидатів для унікальної вакансії, що
                   максимально підходить їхньому досвіду та цілям.
