@@ -24,7 +24,7 @@ import {
   FaWhatsapp,
   FaTelegram,
 } from "react-icons/fa";
-import { FaArrowTrendUp } from "react-icons/fa6";
+import { FaArrowTrendUp, FaViber } from "react-icons/fa6";
 
 const JobPosting = () => {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);
@@ -88,14 +88,14 @@ const JobPosting = () => {
                     (Бонуси які забираєш день в день, не дожидаючись зп)
                   </p>
                 </div>
-                <div className="mt-4 flex gap-1 w-full justify-around items-center">
-                  <p className="text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
+                <div className="mt-2 md:mt-4 flex flex-col md:flex-row gap-1 w-full justify-around items-start md:items-center">
+                  <p className="text-sm md:text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
                     25$–1000$
                   </p>
-                  <p className="text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
+                  <p className="text-sm md:text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
                     Графік: 5/2, с 10-18
                   </p>
-                  <p className="text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
+                  <p className="text-sm md:text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
                     Зарплата дважды в месяц
                   </p>
                 </div>
@@ -124,24 +124,24 @@ const JobPosting = () => {
               <p className="text-center text-sm sm:text-base mb-4">
                 За подробними умовами звертайтесь за телефоном{" "}
                 <a
-                  href="tel:+380123456789"
+                  href="tel:+380661851900"
                   className="font-bold hover:underline"
                 >
-                  +380123456789
+                  +380 661 851 900
                 </a>{" "}
                 <br /> або в месенджери за посиланнями нижче.
               </p>
               <div className="flex justify-center gap-4">
                 <a
-                  href="https://wa.me/+380123456789"
+                  href="https://tinyurl.com/colonist-agency"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-all duration-300"
                 >
-                  <FaWhatsapp className="w-5 h-5" /> WhatsApp
+                  <FaViber className="w-5 h-5" /> Viber
                 </a>
                 <a
-                  href="https://t.me/example"
+                  href="https://t.me/+380661851900"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all duration-300"
