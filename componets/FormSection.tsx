@@ -130,7 +130,7 @@ Telegram: ${data.telegram}
   return (
     <div
       id="request"
-      className="bg-white text-[var(--main-color)] flex items-center justify-center p-4 sm:p-6 py-12 md:pt-10 md:pb-16 relative overflow-hidden"
+      className="bg-white text-[var(--main-color)] flex items-center justify-center p-4 sm:p-6 py-12 md:pt-20 md:pb-16 relative overflow-hidden"
     >
       <div className="relative z-10 w-full max-w-2xl">
         {/* Main heading */}

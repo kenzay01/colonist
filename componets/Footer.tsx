@@ -11,10 +11,10 @@ const Footer = () => {
           --secondary-color: #1a4a7a;
         }
       `}</style>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 mb-8 text-center sm:text-left">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="flex flex-col justify-center items-center gap-8 mb-8 text-center sm:text-left">
           {/* About Us */}
-          <div>
+          <div className="flex flex-col items-center max-w-lg text-center">
             <h3 className="text-lg sm:text-xl font-bold mb-4">Про нас</h3>
             <p className="text-sm sm:text-base">
               Ми — команда, що допомагає знаходити таланти та створювати успішні
@@ -23,32 +23,32 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="flex flex-col items-center">
             <h3 className="text-lg sm:text-xl font-bold mb-4">Контакти</h3>
             <p className="text-sm sm:text-base">Email: info@example.com</p>
             <p className="text-sm sm:text-base">Телефон: +380 123 456 789</p>
           </div>
 
           {/* Follow Us */}
-          <div>
+          <div className="flex flex-col items-center">
             <h3 className="text-lg sm:text-xl font-bold mb-4">
               Стежте за нами
             </h3>
             <div className="flex space-x-4 items-center justify-center sm:justify-start">
               <a
-                href="#"
+                href="https://www.instagram.com/colonist.agency"
                 className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
               >
                 <FaInstagram className="w-4 h-4 text-white" />
               </a>
               <a
-                href="#"
+                href="https://t.me/+380661851900"
                 className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
               >
                 <FaTelegram className="w-4 h-4 text-white" />
               </a>
               <a
-                href="#"
+                href="https://tinyurl.com/colonist-agency"
                 className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
               >
                 <FaViber className="w-4 h-4 text-white" />

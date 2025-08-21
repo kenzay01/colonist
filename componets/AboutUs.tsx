@@ -27,6 +27,15 @@ const AboutUs = () => {
               став навігатором для бізнесу в пошуку талантів.
             </p>
 
+            <p className="text-base sm:text-lg md:text-xl text-[var(--main-color)] leading-relaxed">
+              <span className="font-bold text-[var(--main-color)]">
+                COLONIST
+              </span>{" "}
+              — HR агентство, що працює з 2022 року. Ми не просто підбираємо
+              вакансії — ми допомагаємо кандидатам знайти роботу, яка дійсно
+              підходить їхньому досвіду та цілям.
+            </p>
+
             <div className="flex items-center justify-center my-2">
               <div className="mx-4 text-3xl sm:text-4xl font-bold text-[var(--main-color)]">
                 ⬇
@@ -46,10 +55,54 @@ const AboutUs = () => {
               дійсно підходить.
             </p>
 
+            <p className="text-base sm:text-lg md:text-xl text-[var(--main-color)] leading-relaxed">
+              Наша команда уважно вивчає ваші навички та очікування, щоб
+              запропонувати лише найкращі варіанти та підтримати вас на кожному
+              етапі пошуку.
+            </p>
+
             <div className="bg-[var(--main-color)] rounded-xl rounded-tl-[40px] rounded-br-[40px] p-4 sm:p-6 mt-8 border-2 border-white/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-white">
+              <p className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4">
                 МИ НЕ ПЕРЕСИЛАЄМО РЕЗЮМЕ — МИ СТВОРЮЄМО РЕЗУЛЬТАТ
               </p>
+              <p className="text-base sm:text-lg text-white">
+                «Одна вакансія — мільйон можливостей!»
+              </p>
+              <p className="text-base sm:text-lg text-white mt-2">
+                Ми створюємо нову реальність для наших кандидатів.
+              </p>
+            </div>
+
+            <div className="space-y-4 mt-8">
+              <h3 className="text-xl sm:text-2xl font-bold text-[var(--main-color)] mb-4">
+                Що ми робимо:
+              </h3>
+
+              <div className="space-y-3">
+                <p className="text-base sm:text-lg text-[var(--main-color)] leading-relaxed">
+                  • Відбираємо найкращих кандидатів для унікальної вакансії, що
+                  максимально підходить їхньому досвіду та цілям.
+                </p>
+
+                <p className="text-base sm:text-lg text-[var(--main-color)] leading-relaxed">
+                  • Пропонуємо єдину вакансію, яка закриває широкий спектр
+                  професійних та особистих потреб.
+                </p>
+
+                <p className="text-base sm:text-lg text-[var(--main-color)] leading-relaxed">
+                  • Підтримуємо на кожному етапі — від знайомства з вакансією до
+                  успішного працевлаштування.
+                </p>
+              </div>
+
+              <div className="bg-white/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 mt-6 border border-[var(--main-color)]/20">
+                <p className="text-base sm:text-lg text-[var(--main-color)] leading-relaxed font-medium">
+                  <span className="font-bold">Чому одна вакансія?</span> Тому що
+                  вона поєднує в собі все важливе: зростання, комфорт, розвиток
+                  та стабільність. Ми впевнені, що одне якісне рішення краще за
+                  множину компромісів.
+                </p>
+              </div>
             </div>
           </div>
         </div>

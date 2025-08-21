@@ -15,9 +15,13 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { id: "instagram", href: "#", icon: FaInstagram },
-    { id: "telegram", href: "#", icon: FaTelegram },
-    { id: "viber", href: "#", icon: FaViber },
+    {
+      id: "instagram",
+      href: "https://www.instagram.com/colonist.agency",
+      icon: FaInstagram,
+    },
+    { id: "telegram", href: "https://t.me/+380661851900", icon: FaTelegram },
+    { id: "viber", href: "https://tinyurl.com/colonist-agency", icon: FaViber },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -36,7 +40,7 @@ const Header = () => {
   };
 
   return (
-    <header className="md:relative fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 bg-[var(--main-color)] rounded-b-2xl border-1 border-t-0 border-white">
         <div className="flex justify-between items-center h-12 sm:h-16">
           {/* Left side - Social icons */}

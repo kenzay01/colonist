@@ -46,239 +46,6 @@ const JobPosting = () => {
           </h1>
         </div>
 
-        {/* Salary Overview */}
-        {/* <div className="max-w-6xl mx-auto bg-[var(--main-color)] backdrop-blur-sm rounded-2xl rounded-tl-[60px] rounded-br-[60px] p-6 sm:p-8 md:p-12 shadow-2xl border border-[var(--main-color)]/20 mb-8 transition-all duration-300 hover:shadow-lg">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-6 sm:mb-8 flex items-center justify-center gap-3">
-            <FaDollarSign className="w-6 h-6 sm:w-8 sm:h-8" />
-            Зарплатний пакет
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8">
-            <div className="bg-white shadow-md border border-gray-200 rounded-xl p-4 sm:p-6 text-[var(--main-color)] transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <h3 className="text-lg sm:text-xl font-bold mb-4 flex items-center gap-2">
-                <FaMoneyBillWave className="w-5 h-5 sm:w-6 sm:h-6" />
-                Базова ставка
-              </h3>
-              <p className="text-xl sm:text-2xl font-bold">600-800$</p>
-              <p className="text-sm opacity-90 mt-2">Залежить від досвіду</p>
-            </div>
-
-            <div className="bg-white shadow-md border border-gray-200 rounded-xl p-4 sm:p-6 text-[var(--main-color)] transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <h3 className="text-lg sm:text-xl font-bold mb-4 flex items-center gap-2">
-                <FaGift className="w-5 h-5 sm:w-6 sm:h-6" />
-                Премії
-              </h3>
-              <p className="text-xl sm:text-2xl font-bold">250-500$</p>
-              <p className="text-sm opacity-90 mt-2">За досягнення</p>
-            </div>
-          </div>
-
-          <div className="bg-white shadow-md border border-gray-200 rounded-xl rounded-tl-[40px] rounded-br-[40px] p-4 sm:p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-            <p className="text-lg sm:text-xl md:text-2xl font-bold text-[var(--main-color)] mb-2 flex items-center justify-center gap-3">
-              <FaFire className="w-5 h-5 sm:w-6 sm:h-6" />
-              СЕРЕДНЯ ЗП: 1800$+
-              <FaFire className="w-5 h-5 sm:w-6 sm:h-6" />
-            </p>
-            <p className="text-[var(--main-color)]/90 text-sm sm:text-base">
-              Виплати двічі на місяць
-            </p>
-          </div>
-        </div> */}
-
-        {/* Salary Structure */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-8 max-w-6xl mx-auto">
-          <div className="bg-[var(--main-color)] backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-2xl transition-all duration-300 hover:shadow-lg">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <FaArrowTrendUp className="w-5 h-5 sm:w-6 sm:h-6" />
-              Градація ставки
-            </h3>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center p-3 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                <span className="text-[var(--main-color)] flex items-center gap-2 text-sm sm:text-base">
-                  <FaDollarSign className="w-4 h-4" />0 депозитів
-                </span>
-                <span className="font-bold text-[var(--main-color)]">600$</span>
-              </div>
-              <div className="flex justify-between items-center p-3 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                <span className="text-[var(--main-color)] flex items-center gap-2 text-sm sm:text-base">
-                  <FaDollarSign className="w-4 h-4" />1 депозит
-                </span>
-                <span className="font-bold text-[var(--main-color)]">700$</span>
-              </div>
-              <div className="flex justify-between items-center p-3 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                <span className="text-[var(--main-color)] flex items-center gap-2 text-sm sm:text-base">
-                  <FaDollarSign className="w-4 h-4" />
-                  від 2 депозитів
-                </span>
-                <span className="font-bold text-[var(--main-color)]">800$</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-[var(--main-color)] backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-2xl transition-all duration-300 hover:shadow-lg">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <FaGift className="w-5 h-5 sm:w-6 sm:h-6" />
-              Премії за депозити
-            </h3>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center p-3 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                <span className="text-[var(--main-color)] flex items-center gap-2 text-sm sm:text-base">
-                  <FaMedal className="w-4 h-4" />3 депозити
-                </span>
-                <span className="font-bold text-[var(--main-color)]">
-                  +500$
-                </span>
-              </div>
-              <div className="flex justify-between items-center p-3 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                <span className="text-[var(--main-color)] flex items-center gap-2 text-sm sm:text-base">
-                  <FaMedal className="w-4 h-4" />5 депозитів
-                </span>
-                <span className="font-bold text-[var(--main-color)]">
-                  +250$
-                </span>
-              </div>
-              <div className="flex justify-between items-center p-3 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                <span className="text-[var(--main-color)] flex items-center gap-2 text-sm sm:text-base">
-                  <FaMedal className="w-4 h-4" />7 депозитів
-                </span>
-                <span className="font-bold text-[var(--main-color)]">
-                  +250$
-                </span>
-              </div>
-              <div className="flex justify-between items-center p-3 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                <span className="text-[var(--main-color)] flex items-center gap-2 text-sm sm:text-base">
-                  <FaMedal className="w-4 h-4" />9 депозитів
-                </span>
-                <span className="font-bold text-[var(--main-color)]">
-                  +250$
-                </span>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* Percentage from deposits */}
-        {/* <div className="bg-[var(--main-color)] backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-2xl mb-8 transition-all duration-300 hover:shadow-lg">
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 text-center flex items-center justify-center gap-3">
-            <FaPercentage className="w-5 h-5 sm:w-6 sm:h-6" />
-            від депозиту
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-white shadow-md border border-gray-200 p-4 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold text-sm sm:text-base">
-                500-1500$
-              </p>
-              <p className="text-xl sm:text-2xl font-bold text-[var(--main-color)] flex items-center justify-center gap-1">
-                5<FaPercentage className="w-4 h-4" />
-              </p>
-            </div>
-            <div className="bg-white shadow-md border border-gray-200 p-4 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold text-sm sm:text-base">
-                2000-3500$
-              </p>
-              <p className="text-xl sm:text-2xl font-bold text-[var(--main-color)] flex items-center justify-center gap-1">
-                5.5
-                <FaPercentage className="w-4 h-4" />
-              </p>
-            </div>
-            <div className="bg-white shadow-md border border-gray-200 p-4 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold text-sm sm:text-base">
-                4000-4500$
-              </p>
-              <p className="text-xl sm:text-2xl font-bold text-[var(--main-color)] flex items-center justify-center gap-1">
-                6<FaPercentage className="w-4 h-4" />
-              </p>
-            </div>
-            <div className="bg-white shadow-md border border-gray-200 p-4 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold text-sm sm:text-base">
-                5000$+
-              </p>
-              <p className="text-xl sm:text-2xl font-bold text-[var(--main-color)] flex items-center justify-center gap-1">
-                6.5
-                <FaPercentage className="w-4 h-4" />
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-6 p-4 bg-white shadow-md border border-gray-200 rounded-xl text-[var(--main-color)] text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-            <p className="font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
-              <FaFire className="w-5 h-5" />
-              Спеціальний бонус: клієнт 2+ місяці і він поповняє на суму 30k+,
-              то Ви отримуєте +500$
-              <FaFire className="w-5 h-5" />
-            </p>
-          </div>
-        </div> */}
-
-        {/* Extra Bonus */}
-        {/* <div className="max-w-6xl mx-auto bg-[var(--main-color)] backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-2xl mb-8 transition-all duration-300 hover:shadow-lg">
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 text-center flex items-center justify-center gap-3">
-            <FaTrophy className="w-5 h-5 sm:w-6 sm:h-6" />
-            EXTRA BONUS ( день в день! )
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="bg-white shadow-md border border-gray-200 p-4 rounded-xl text- center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold flex items-center justify-center gap-2 text-sm sm:text-base">
-                <FaChartLine className="w-4 h-4" />2 депозити
-              </p>
-              <p className="text-lg sm:text-xl font-bold text-[var(--main-color)]">
-                25$
-              </p>
-            </div>
-            <div className="bg-white shadow-md border border-gray-200 p-4 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold flex items-center justify-center gap-2 text-sm sm:text-base">
-                <FaChartLine className="w-4 h-4" />3 депозити
-              </p>
-              <p className="text-lg sm:text-xl font-bold text-[var(--main-color)]">
-                60$
-              </p>
-            </div>
-            <div className="bg-white shadow-md border border-gray-200 p-4 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold flex items-center justify-center gap-2 text-sm sm:text-base">
-                <FaChartLine className="w-4 h-4" />4 депозити
-              </p>
-              <p className="text-lg sm:text-xl font-bold text-[var(--main-color)]">
-                125$
-              </p>
-            </div>
-            <div className="bg-white shadow-md border border-gray-200 p-4 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold flex items-center justify-center gap-2 text-sm sm:text-base">
-                <FaChartLine className="w-4 h-4" />
-                5-7 депозитів
-              </p>
-              <p className="text-lg sm:text-xl font-bold text-[var(--main-color)]">
-                250$
-              </p>
-            </div>
-            <div className="bg-white shadow-md border border-gray-200 p-4 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold flex items-center justify-center gap-2 text-sm sm:text-base">
-                <FaChartLine className="w-4 h-4" />
-                8-9 депозитів
-              </p>
-              <p className="text-lg sm:text-xl font-bold text-[var(--main-color)]">
-                375$
-              </p>
-            </div>
-            <div className="bg-white shadow-md border-2 border-[var(--main-color)] p-4 rounded-xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <p className="text-[var(--main-color)] font-semibold flex items-center justify-center gap-2 text-sm sm:text-base">
-                <FaTrophy className="w-4 h-4" />
-                10 депозитів
-              </p>
-              <p className="text-xl sm:text-2xl font-bold text-[var(--main-color)]">
-                1000$
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-6 p-4 bg-white shadow-md border border-gray-200 rounded-xl text-[var(--main-color)] text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-            <p className="font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
-              <FaStar className="w-5 h-5" />
-              +1000 грн/міс за відвідуваність без пропусків
-              <FaClock className="w-5 h-5" />
-            </p>
-          </div>
-        </div> */}
-
         {/* Work Conditions */}
         <div className="max-w-6xl mx-auto bg-[var(--main-color)] backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-2xl mb-8 transition-all duration-300 hover:shadow-lg">
           <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 text-center flex items-center justify-center gap-3">
@@ -309,6 +76,33 @@ const JobPosting = () => {
               </div>
             </div>
           </div>
+
+          {/* New Conditions Block */}
+          <div className="mt-6">
+            <div className="flex-1 flex  items-center gap-4 p-4 bg-white shadow-sm border border-gray-200 rounded-lg text-[var(--main-color)] transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+              <FaCalendarAlt className="w-10 h-10" />
+              <div className="w-full">
+                <div>
+                  <p className="font-extrabold text-2xl uppercase">Умови:</p>
+                  <p className="text-lg font-bold">
+                    (Бонуси які забираєш день в день, не дожидаючись зп)
+                  </p>
+                </div>
+                <div className="mt-4 flex gap-1 w-full justify-around items-center">
+                  <p className="text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
+                    25$–1000$
+                  </p>
+                  <p className="text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
+                    Графік: 5/2, с 10-18
+                  </p>
+                  <p className="text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
+                    Зарплата дважды в месяц
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="text-center mt-6">
             <button
               onClick={toggleDetails}
@@ -360,7 +154,7 @@ const JobPosting = () => {
         </div>
 
         {/* Benefits */}
-        {/* <div className="max-w-6xl mx-auto bg-[var(--main-color)] backdrop-blur-sm rounded-2xl rounded-tl-[60px] rounded-br-[60px] p-6 sm:p-8 md:p-12 shadow-2xl border border-[var(--main-color)]/20 transition-all duration-300 hover:shadow-lg">
+        <div className="max-w-6xl mx-auto bg-[var(--main-color)] backdrop-blur-sm rounded-2xl rounded-tl-[60px] rounded-br-[60px] p-6 sm:p-8 md:p-12 shadow-2xl border border-[var(--main-color)]/20 transition-all duration-300 hover:shadow-lg">
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 text-center flex items-center justify-center gap-3">
             <FaStar className="w-6 h-6 sm:w-8 sm:h-8" />
             Переваги роботи
@@ -391,7 +185,7 @@ const JobPosting = () => {
                 Зона відпочинку
               </span>
             </div>
-            <div className="flex items-center gap-3 p-4 bg książki shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+            <div className="flex items-center gap-3 p-4 bg-white shadow-sm border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <FaCar className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--main-color)]" />
               <span className="text-[var(--main-color)] text-sm sm:text-base">
                 Є паркінг
@@ -424,7 +218,7 @@ const JobPosting = () => {
             </div>
           </div>
 
-          <div className="bg-white shadow-md border border-gray-200 rounded-xl rounded-tl-[40px] rounded-br-[40px] p-6 mt-8 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+          {/* <div className="bg-white shadow-md border border-gray-200 rounded-xl rounded-tl-[40px] rounded-br-[40px] p-6 mt-8 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
             <h4 className="text-lg sm:text-xl font-bold text-[var(--main-color)] mb-4 flex items-center justify-center gap-2">
               <FaHandshake className="w-5 h-5 sm:w-6 sm:h-6" />
               Наш підхід до співпраці:
@@ -455,8 +249,8 @@ const JobPosting = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
       </div>
 
       {/* Decorative wave */}
