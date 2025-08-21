@@ -83,14 +83,16 @@ const JobPosting = () => {
               <FaCalendarAlt className="w-10 h-10" />
               <div className="w-full">
                 <div>
-                  <p className="font-extrabold text-2xl uppercase">Умови:</p>
-                  <p className="text-lg font-bold">
-                    (Бонуси які забираєш день в день, не дожидаючись зп)
+                  <p className="font-extrabold text-2xl uppercase">
+                    Додаткові Умови:
                   </p>
+                  {/* <p className="text-lg font-bold">
+                    (Бонуси які забираєш день в день, не дожидаючись зп)
+                  </p> */}
                 </div>
                 <div className="mt-2 md:mt-4 flex flex-col md:flex-row gap-1 w-full justify-around items-start md:items-center">
                   <p className="text-sm md:text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
-                    25$–1000$
+                    Бонуси 25$–1000$
                   </p>
                   <p className="text-sm md:text-lg font-bold py-1 px-4 rounded-2xl bg-[var(--main-color)] text-white">
                     Графік: 5/2, з 10 до 18
