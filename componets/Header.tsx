@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { FaInstagram, FaTelegram, FaViber } from "react-icons/fa6";
+import { FaInstagram, FaTelegram, FaTiktok, FaViber } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,13 +15,18 @@ const Header = () => {
   ];
 
   const socialLinks = [
+    { id: "telegram", href: "https://t.me/+380661851900", icon: FaTelegram },
+    { id: "viber", href: "https://tinyurl.com/colonist-agency", icon: FaViber },
     {
       id: "instagram",
       href: "https://www.instagram.com/colonist.agency",
       icon: FaInstagram,
     },
-    { id: "telegram", href: "https://t.me/+380661851900", icon: FaTelegram },
-    { id: "viber", href: "https://tinyurl.com/colonist-agency", icon: FaViber },
+    {
+      id: "tiktok",
+      href: "https://www.tiktok.com/@colonist_hr",
+      icon: FaTiktok,
+    },
   ];
 
   const scrollToSection = (sectionId: string) => {

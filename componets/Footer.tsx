@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FaInstagram, FaTelegram, FaViber } from "react-icons/fa6";
+import { FaInstagram, FaTelegram, FaViber, FaTiktok } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -25,8 +25,9 @@ const Footer = () => {
           {/* Contact */}
           <div className="flex flex-col items-center">
             <h3 className="text-lg sm:text-xl font-bold mb-4">Контакти</h3>
-            <p className="text-sm sm:text-base">Email: info@example.com</p>
-            <p className="text-sm sm:text-base">Телефон: +380 123 456 789</p>
+            <p className="text-sm sm:text-base">
+              Телефон: <a href="tel:+380661851900">+380 661 851 900</a>
+            </p>
           </div>
 
           {/* Follow Us */}
@@ -35,12 +36,6 @@ const Footer = () => {
               Стежте за нами
             </h3>
             <div className="flex space-x-4 items-center justify-center sm:justify-start">
-              <a
-                href="https://www.instagram.com/colonist.agency"
-                className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
-              >
-                <FaInstagram className="w-4 h-4 text-white" />
-              </a>
               <a
                 href="https://t.me/+380661851900"
                 className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
@@ -52,6 +47,18 @@ const Footer = () => {
                 className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
               >
                 <FaViber className="w-4 h-4 text-white" />
+              </a>
+              <a
+                href="https://www.instagram.com/colonist.agency"
+                className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
+              >
+                <FaInstagram className="w-4 h-4 text-white" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@colonist_hr"
+                className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-[var(--secondary-color)] transition-all duration-300"
+              >
+                <FaTiktok className="w-4 h-4 text-white" />
               </a>
             </div>
           </div>
